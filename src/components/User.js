@@ -5,7 +5,7 @@ import {
   InputRightElement,
   Button,
   Flex,
-  Text,
+  Heading,
 } from "@chakra-ui/react";
 import Repos from "./Repos";
 
@@ -53,7 +53,11 @@ function User() {
           </InputRightElement>
         </InputGroup>
       </Flex>
-      <Repos repoloading={loading} repoitem={items} user={user} />
+      {items.message === "Not Found" ? (
+        <Heading>No user</Heading>
+      ) : (
+        <Repos repoloading={loading} repoitem={items} user={user} />
+      )}
     </>
   );
 }

@@ -25,7 +25,7 @@ function Repos({ repoloading, repoitem, user }) {
   return (
     <Flex justify={"center"}>
       <Card
-        width={"40%"}
+        width={"50%"}
         textAlign={"left"}
         height={"90vh"}
         overflowY={"scroll"}
