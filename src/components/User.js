@@ -24,7 +24,6 @@ function User() {
         const data = await res.json();
         setItems(data);
         setLoading(false);
-        console.log(data);
       } catch (error) {
         console.log("Something went wrong", error);
       }
