@@ -36,13 +36,14 @@ function User() {
   return (
     <>
       <Flex justify={"center"} m="8">
-        <InputGroup width={"50%"}>
+        <InputGroup width={["100%", "50%"]}>
           <Input
             placeholder="Enter Github username"
             onChange={(e) => setValue(e.target.value)}
           />
           <InputRightElement width="4.5rem">
             <Button
+              colorScheme="blue"
               onClick={() => {
                 setUser(value);
                 setLoading(!loading);

@@ -25,14 +25,15 @@ function Repos({ repoloading, repoitem, user }) {
   return (
     <Flex justify={"center"}>
       <Card
-        width={"50%"}
+        width={["100%", "50%"]}
         textAlign={"left"}
         height={"90vh"}
         overflowY={"scroll"}
         variant={"elevated"}
         bgColor={"white"}
         color={"black"}
-        m="8"
+        m={["0", "8"]}
+        borderRadius={"1em"}
       >
         <CardHeader>
           <Heading size="lg">{user}'s Contribution Repositories</Heading>
