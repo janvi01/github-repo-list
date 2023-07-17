@@ -4,7 +4,7 @@ import User from "./components/User";
 
 function App() {
   return (
-    <Box textAlign={"center"}>
+    <Box textAlign={"center"} p="8">
       <Heading>Github Repo List</Heading>
       <User />
     </Box>
