@@ -7,6 +7,7 @@ import {
   Flex,
   Text,
 } from "@chakra-ui/react";
+import Repos from "./Repos";
 
 function User() {
   const [user, setUser] = useState("janvi01");
@@ -33,24 +34,27 @@ function User() {
   }, [user]);
 
   return (
-    <Flex justify={"center"} m="8">
-      <InputGroup width={"50%"}>
-        <Input
-          placeholder="Enter Github username"
-          onChange={(e) => setValue(e.target.value)}
-        />
-        <InputRightElement width="4.5rem">
-          <Button
-            onClick={() => {
-              setUser(value);
-              setLoading(!loading);
-            }}
-          >
-            Search
-          </Button>
-        </InputRightElement>
-      </InputGroup>
-    </Flex>
+    <>
+      <Flex justify={"center"} m="8">
+        <InputGroup width={"50%"}>
+          <Input
+            placeholder="Enter Github username"
+            onChange={(e) => setValue(e.target.value)}
+          />
+          <InputRightElement width="4.5rem">
+            <Button
+              onClick={() => {
+                setUser(value);
+                setLoading(!loading);
+              }}
+            >
+              Search
+            </Button>
+          </InputRightElement>
+        </InputGroup>
+      </Flex>
+      <Repos repoloading={loading} repoitem={items} user={user} />
+    </>
   );
 }
 
