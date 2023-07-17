@@ -1,11 +1,13 @@
-import { Heading, VStack } from "@chakra-ui/react";
+import { Heading, Box } from "@chakra-ui/react";
 import React from "react";
+import User from "./components/User";
 
 function App() {
   return (
-    <VStack justify={"center"}>
+    <Box textAlign={"center"}>
       <Heading>Github Repo List</Heading>
-    </VStack>
+      <User />
+    </Box>
   );
 }
 
