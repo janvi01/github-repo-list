@@ -6,7 +6,7 @@ import { BsGithub } from "react-icons/bs";
 function App() {
   return (
     <Box textAlign={"center"} p="8" bgColor={"black"} minHeight={"100vh"}>
-      <HStack justify={"center"} spacing={"6"}>
+      <HStack justify={"center"} spacing={"6"} color={"white"}>
         <Icon as={BsGithub} boxSize={12} />
         <Heading>Github Repo List</Heading>
       </HStack>

@@ -1,8 +1,49 @@
-# Getting Started with Create React App
+# GitHub Repo List
+
+A web page that list all the repositories a user contributed to on GitHub
+
+Tech stack used -
+
+- React (front-end JS library)
+- [Chakra UI](https://chakra-ui.com/) (UI library)
+- [GitHub's REST API](https://docs.github.com/en/rest?apiVersion=2022-11-28)
+- [React icons](https://react-icons.github.io/react-icons/)
+
+## How To Use 🔧
+
+From your command line, first clone `github-repo-list`.
+
+```bash
+# Clone this repository
+$ git clone https://github.com/janvi01/github-repo-list.git
+
+# Go into the repository directory
+$ cd github-repo-list
+```
+
+<br/>
+
+Then you can install the dependencies using `npm` or `yarn`.
+
+Using NPM:
+
+```bash
+# Install dependencies
+$ npm install
+
+# Start the react development server
+$ npm start
+```
+
+Once your server has started, go to the localhost portal `http://localhost:3000/` to see the webpage live locally.
+
+## Create React App instructions
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
