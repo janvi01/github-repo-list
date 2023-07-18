@@ -52,7 +52,7 @@ function Repos({ repoloading, repoitem, user }) {
                   </Text>
                   <Text pt="2" fontSize="sm">
                     <b>Repo URL:</b>{" "}
-                    <Link color={"blue"} href={repo.html_url}>
+                    <Link color={"blue"} href={repo.html_url} target="_blank">
                       {repo.html_url}
                     </Link>
                   </Text>

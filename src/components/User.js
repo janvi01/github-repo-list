@@ -54,7 +54,7 @@ function User() {
         </InputGroup>
       </Flex>
       {items.message === "Not Found" ? (
-        <Heading>No user</Heading>
+        <Heading>No such user exist</Heading>
       ) : (
         <Repos repoloading={loading} repoitem={items} user={user} />
       )}
