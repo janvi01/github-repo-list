@@ -10,6 +10,7 @@ import {
 import Repos from "./Repos";
 
 function User() {
+  // setting user initially to my github account i.e. janvi01
   const [user, setUser] = useState("janvi01");
   const [value, setValue] = useState("");
   const [items, setItems] = useState([]);
