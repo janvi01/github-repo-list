@@ -44,7 +44,7 @@ function User() {
           />
           <InputRightElement width="4.5rem">
             <Button
-              colorScheme="blue"
+              colorScheme="cyan"
               onClick={() => {
                 setUser(value);
                 setLoading(!loading);
