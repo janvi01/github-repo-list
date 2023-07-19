@@ -39,6 +39,7 @@ function User() {
         <InputGroup width={["100%", "50%"]}>
           <Input
             placeholder="Enter Github username"
+            color={"white"}
             onChange={(e) => setValue(e.target.value)}
           />
           <InputRightElement width="4.5rem">
